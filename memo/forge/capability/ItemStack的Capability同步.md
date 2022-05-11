@@ -1,31 +1,12 @@
-# ItemStack 的 Capability 同步
-
 由于`Capability`的`Tag`是独立于`ItemStack`本身的`Tag`的，所以我们需要手动进行同步。
-
-但，不是手动发包！
 
 Forge 提供了一组方法方便同步`Capability`。
 
-IForgeItem：
 ```java
-@Nullable
-default CompoundTag getShareTag(ItemStack stack) {
-    return stack.getTag();
-}
-```
-用来获取待同步的`Tag`，默认实现为获取`ItemStack`本身的 tag。
-
-注意！如果这里覆写方法没有调用 super，可能会导致`ItemStack`本身的同步失效。
-
-```java
-default void readShareTag(ItemStack stack, @Nullable CompoundTag nbt) {
-    stack.setTag(nbt);
-}
-```
-用来在`Tag`同步后读取的方法。
-
-可能干说有点不太好理解，来点例子：
-```java
+/**
+ *  用来获取待同步的`Tag`，默认实现为获取`ItemStack`本身的 tag。
+ *  注意！如果这里覆写方法没有调用 super，可能会导致`ItemStack`本身的同步失效。 
+ */
 @Nullable
 @Override
 public CompoundTag getShareTag(ItemStack stack) {
@@ -38,6 +19,7 @@ public CompoundTag getShareTag(ItemStack stack) {
     return result;
 }
 
+/** 用来在`Tag`同步后读取的方法。 */
 @Override
 public void readShareTag(ItemStack stack, @Nullable CompoundTagnbt) {
     super.readShareTag(stack, nbt);

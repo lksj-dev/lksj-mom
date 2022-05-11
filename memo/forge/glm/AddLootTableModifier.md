@@ -1,11 +1,10 @@
 # AddLootTableModifier——用额外的战利品表作为GLM的参数  
-本章节基于Minecraft Forge 1.18.2 40.0.44。**低版本内容可能会有所变化。**  
+基于Minecraft Forge 1.18.2 40.0.44。**低版本内容可能会有所变化。**  
 *****  
 ## `AddLootTableModifier`的起源与发展
-&emsp;&emsp;这个类是先由 Commoble 编写，后被 vectorwing 用于农夫乐事的奖励箱修改。具体的出处目前暂不得知，有可能是 Commoble 直接为 vectorwing 编写了这个类也说不定。目前能确定的首次使用是农夫乐事。  
-&emsp;&emsp;因为代码简短清晰、可拓展性强、易于使用等优点集于一身，它是GLM的优秀实例之一。 本章节提供的代码则是由作者一定优化过后的版本。
+&emsp;&emsp;这个类是先由 Commoble 编写，后被 vectorwing 用于农夫乐事的奖励箱修改。具体的出处目前暂不得知，有可能是 Commoble 直接为 vectorwing 编写了这个类也说不定。目前能确定的首次使用是农夫乐事。因为代码简短清晰、可拓展性强、易于使用等优点集于一身，它是GLM的优秀实例之一。本文提供的代码则是由作者一定优化过后的版本。  
 *****  
-## `AddLootTableModifier`代码详解
+## `AddLootTableModifier`代码
 完整代码[^完整代码]如下。
 ```java
 import com.google.gson.JsonObject;

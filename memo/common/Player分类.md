@@ -3,5 +3,5 @@
 - `RemotePlayer` 是你看到的服务器上的其他玩家
 - `FakePlayer` 是假的，是特技，由 Forge 提供，继承自 `ServerPlayer`
 - `MockPlayer` 是只在 gametest 的时候存在的训练用稻草人
-- `AbstractClientPlayer` 是 `ClientPlayer` 和 `OtherPlayer` 的共同基类
+- `AbstractClientPlayer` 是 `LocalPlayer` 和 `RemotePlayer` 的共同基类
 - `Player` 是上面这一大坨的共同基类，上面还有 `LivingEntity` 和 `Entity`

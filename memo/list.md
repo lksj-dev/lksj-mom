@@ -18,6 +18,8 @@
         - PKIXPath.md
     - `tool`
         - paste.md
+    - `gradle`
+        - datagen去重.md
     - `meme`
         - LG法则.md
         - 3T定律.md
@@ -26,6 +28,7 @@
         - 943指数.md
     - `forge`
         - forgedocs.md
+        - parchment.md
         - netty报错.md
         - `text`
             - 自定义文字颜色.md

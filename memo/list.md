@@ -20,6 +20,27 @@
         - paste.md
     - `gradle`
         - datagen去重.md
+    - `vanilla`
+        - Player分类.md
+        - vertex.md
+        - `render`
+            - OverlayTexture.md
+            - renderType.md
+            - RenderChunk&Cache.md
+            - `item`
+                - BlockEntityWithoutLevelRenderer.md
+                - Colouring.md
+                - ItemModel.md
+                - ItemPropertyOverride.md
+            - `block`
+                - BlockJsonMdoelStructure.md
+                - Colouring.md
+                - VariantsModel.md
+                - MultipartModel.md
+        - `block`
+            - BlockState.md
+        - `model`
+            - ModelResourceLocation.md
     - `meme`
         - LG法则.md
         - 3T定律.md
@@ -46,25 +67,3 @@
             - ItemStack的Capability同步.md
         - `item`
             - 经典锤制合成.md
-    - `common`
-        - Player分类.md
-- `vanilla`
-    - vertex.md
-    - `render`
-        - OverlayTexture.md
-        - renderType.md
-        - RenderChunk&Cache.md
-        - `item`
-            - BlockEntityWithoutLevelRenderer.md
-            - Colouring.md
-            - ItemModel.md
-            - ItemPropertyOverride.md
-        - `block`
-            - BlockJsonMdoelStructure.md
-            - Colouring.md
-            - VariantsModel.md
-            - MultipartModel.md
-    - `block`
-        - BlockState.md
-    - `model`
-        - ModelResourceLocation.md

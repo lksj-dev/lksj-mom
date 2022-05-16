@@ -1,0 +1,39 @@
+name: Building the Menu List
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 * * * *'
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Python
+        uses: actions/setup-python@master
+        with:
+          python-version: 3.8
+
+      - name: Download
+        run: |
+          python buildingMenu.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit
+        run: |
+          git add .
+          if ! git diff-index --quiet HEAD; then
+            git config --global user.name 'github-actions[bot]'
+            git config --global user.email 'actions@users.noreply.github.com'
+            git commit -m "Building the Menu List" -a
+          fi
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          branch: "bleeding"

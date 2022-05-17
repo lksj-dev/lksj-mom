@@ -3,9 +3,9 @@ name: Building the Menu List
 on:
   push:
   workflow_dispatch:
-  schedule:
-    - cron:  '0 * * * *'
-
+concurrency: 
+  group: indexing
+  cancel-in-progress: true
 jobs:
   build:
     name: Build

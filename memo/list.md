@@ -21,6 +21,7 @@
     - `gradle`
         - datagen去重.md
     - `vanilla`
+        - f3+t.md
         - Player分类.md
         - vertex.md
         - `render`

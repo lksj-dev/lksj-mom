@@ -31,7 +31,7 @@ def readFolder(loc, level):
         addLine(dir, level, True)
         readFolder(loc + "/" + dir, level + 1)
 
-readFolder(".", 0)
+readFolder("./memo/", 0)
 
 print(newText)
 

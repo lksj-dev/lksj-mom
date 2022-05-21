@@ -69,3 +69,5 @@
         - ItemStack的Capability同步.md
     - `item`
         - 经典锤制合成.md
+- `mixin`
+    - MixinJavadocs.md

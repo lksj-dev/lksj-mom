@@ -40,6 +40,9 @@
         - BlockState.md
     - `model`
         - ModelResourceLocation.md
+- `fabric`
+    - `loom`
+        - LoomUpdateMapping.md
 - `meme`
     - LG法则.md
     - 3T定律.md
@@ -57,6 +60,8 @@
     - `forgegradle`
         - setDecW没了.md
         - genRuns.md
+        - FGUpdateMapping.md
+        - FG加依赖.md
         - UnsupportedFG.md
         - 找不到依赖项.md
     - `container`

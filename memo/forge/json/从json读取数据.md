@@ -41,10 +41,10 @@ BlockState aBlockState = NBTUtils.readBlockState(aCompoundTag);
 JSON格式参考：
 ```json
 {
-    "Name": "minecraft:stone",
+    "Name": "minecraft:stone_slab",
     "Properties":
     {
-        "variant": "granite"
+        "type": "top"
     }
 }
 ```

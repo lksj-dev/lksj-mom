@@ -11,74 +11,76 @@
 <!--MARKFORBOT-->
 - list.md
 - `java`
+    - PKIXPath长版.md
     - PKIXPath.md
     - Java入门.md
-    - PKIXPath长版.md
-- `fabric`
-    - `loom`
-        - LoomUpdateMapping.md
-- `tool`
-    - paste.md
-- `gradle`
-    - datagen去重.md
+- `mixin`
+    - MixinJavadocs.md
 - `forge`
-    - forgedocs.md
     - Forge下反射.md
-    - ml+8u321.md
-    - netty报错.md
     - parchment.md
+    - netty报错.md
+    - ml+8u321.md
+    - forgedocs.md
+    - `json`
+        - 从json读取数据.md
+    - `serialize`
+        - 通用的序列化和反序列化方式.md
+    - `container`
+        - quickMoveStack的简要分析.md
+    - `text`
+        - 自定义文字颜色.md
+    - `item`
+        - 经典锤制合成.md
+    - `render`
+        - IModelData.md
     - `block`
         - EntityBlock看不到.md
     - `glm`
         - 使用数据生成器快速生成GLM.md
-        - GLM是什么.md
         - AddLootTableModifier.md
-    - `render`
-        - IModelData.md
-    - `json`
-        - 从json读取数据.md
+        - GLM是什么.md
     - `forgegradle`
-        - UnsupportedFG.md
-        - FGUpdateMapping.md
-        - setDecW没了.md
-        - FG加依赖.md
         - genRuns.md
         - 找不到依赖项.md
-    - `item`
-        - 经典锤制合成.md
+        - FG加依赖.md
+        - FGUpdateMapping.md
+        - setDecW没了.md
+        - UnsupportedFG.md
     - `capability`
         - ItemStack的Capability同步.md
-    - `text`
-        - 自定义文字颜色.md
-    - `container`
-        - quickMoveStack的简要分析.md
-- `mixin`
-    - MixinJavadocs.md
+- `tool`
+    - paste.md
+- `fabric`
+    - `loom`
+        - LoomUpdateMapping.md
+- `meme`
+    - LG法则.md
+    - Fledge指数.md
+    - 3T定律.md
+    - 943指数.md
+    - ZekerZhayard指数.md
 - `vanilla`
     - vertex.md
-    - f3+t.md
     - Player分类.md
-    - `block`
-        - BlockState.md
+    - f3+t.md
+    - `model`
+        - ModelResourceLocation.md
     - `render`
-        - RenderChunk&Cache.md
         - renderType.md
+        - RenderChunk&Cache.md
         - OverlayTexture.md
-        - `block`
-            - BlockJsonMdoelStructure.md
-            - VariantsModel.md
-            - Colouring.md
-            - MultipartModel.md
         - `item`
             - BlockEntityWithoutLevelRenderer.md
             - ItemPropertyOverride.md
             - ItemModel.md
             - Colouring.md
-    - `model`
-        - ModelResourceLocation.md
-- `meme`
-    - LG法则.md
-    - ZekerZhayard指数.md
-    - Fledge指数.md
-    - 943指数.md
-    - 3T定律.md
+        - `block`
+            - MultipartModel.md
+            - VariantsModel.md
+            - Colouring.md
+            - BlockJsonMdoelStructure.md
+    - `block`
+        - BlockState.md
+- `gradle`
+    - datagen去重.md
